@@ -1,35 +1,35 @@
 {
-    "name": "meteor/region",
-    "description": "Meteor Region",
-    "type": "library",
-    "license": "MIT",
-    "minimum-stability": "beta",
-    "authors": [
-        {
-            "name": "Aslam H",
-            "email": "aslam.hafidz@meteor.id"
-        }
-    ],
-    "autoload": {
-        "psr-4": {
-            "Meteor\\Region\\": "src"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Meteor\\Region\\Tests\\": "tests"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Meteor\\Region\\RegionServiceProvider"
-            ]
-        }
-    },
-    "require-dev": {
-        "orchestra/testbench": "^6.0|^7.0",
-        "phpunit/phpunit": "^9.5",
-        "laravel/pint": "^1.2"
+  "name": "meteor/indonesian-region",
+  "description": "Meteor Region",
+  "type": "library",
+  "license": "MIT",
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "Aslam H",
+      "email": "aslam.hafidz@meteor.id"
     }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Meteor\\Region\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Meteor\\Region\\Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Meteor\\Region\\RegionServiceProvider"
+      ]
+    }
+  },
+  "require-dev": {
+    "orchestra/testbench": "^6.0|^7.0",
+    "phpunit/phpunit": "^9.5",
+    "laravel/pint": "^1.2"
+  }
 }
