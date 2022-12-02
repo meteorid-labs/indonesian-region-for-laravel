@@ -15,14 +15,14 @@ jobs:
     name: PHP:${{ matrix.php }} / Laravel:${{ matrix.laravel }}
     steps:
       - name: Checkout
-        uses: actions/cache@v2
+        uses: actions/checkout@v2
 
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
           php-version: ${{ matrix.php }}
-          extensions: dom, curl, libxml, mbstring, zip, pcntl, bcmath, intl, fileinfo, sqlite
-          coverage: none
+          extensions: mbstring, sqlite
+          tools: composer:v2, phpunit:${{ matrix.php }}
 
       - name: Get composer cache directory
         id: composercache
